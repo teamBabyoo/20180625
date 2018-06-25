@@ -1,0 +1,89 @@
+charset "utf-8";
+@import url('http://font.googleapis.com/css?family=Nanum+Gothic');
+
+
+
+
+
+/*	reset */
+html {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+body {margin: 0; 
+    font: 15px/1.6em 'Nanum Gothic', sans-serif;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0}
+header, main, footer, section, article, nav {display: block;}
+a {color: inherit; text-decoration: none;}
+a img {border: none;}
+li {list-style: none;}
+address, em, strong, i {font-style: none;}
+
+
+.wrapper{min-width: 1024px;}
+#skip_nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; text-align: center; font-size: 16px; color: #ffffff; background:rgba(0, 0, 0, 0.7); border-bottom: 1px solid #e0e0e0; z-index: 100000; transition: top 0.3s;}
+#skip_nav:focus {top:0;}
+
+
+#header {min-width: 1024px; border-bottom: 1px solid #d8d8d8}
+#tnb {min-width: 1024px;/* height: 30px;*/background: #5f5f5f}
+.align-box {width: 1200px; overflow: hidden; margin: 0 auto;d}
+.align-box ul {width: 370px; float: right;}
+.align-box ul li {display: inline; padding: 10px 0 10px 0; float: left;  }
+#tnb ul li a {font-size: 14px; color: #b1b1b1; }
+#tnb ul li:nth-child(2):before,
+#tnb ul li:nth-child(2):after {
+	content: '|';
+	padding: 0 15px 0 15px;
+	color: #b1b1b1;
+}
+
+/* header */
+header {min-width: 1024px; margin: 0 auto; overflow: hidden; height: 80px;}
+.logo {width: 180px; margin: 15px 10px; float: left;}
+.wth1200 {width: 1200px; margin: 0 auto}
+#gnb {/*position: relative; */float: right; width: 1000px;}
+/*
+#gnb::after {content: ''; display: block; clear: both;}
+*/
+#gnb ul li {float: left; display: inline; width: 200px; color: red; text-align: center; line-height: 80px; font-weight: bold; letter-spacing: 5px;}
+
+
+/* main */
+main {position: relative; min-width: 1024px; height: 500px; height: 800px;overflow: hidden;}
+
+.slide li {top: 0; left: 0;}
+#visual ul.slide li:nth-child(1){; display: block; background: url(../img/full_chalie.jpg); height: 800px;}
+#visual ul.slide li:nth-child(2){; display: block; background: url(../img/full_sfp.jpg); height: 800px;}
+#visual ul.slide li:nth-child(3){; display: block; background: url(../img/full_hem.jpg); height: 800px;}
+
+.visualImg {width: 400px; height: 574px; background-size: cover}
+.visualImg {position: absolute; top: 50%; left: 25%; transform:  translate(0, -50%);}
+/*cntx left:0% -- > 100% !jQuery css attr fix!*/
+.cntx1{position: absolute; top: 25px; left: 100%; padding: 80px 50px; width: 400px; height: 520px; background: rgba(255, 255, 255, 0.7); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.3); box-sizing: border-box; text-align: center;}
+
+.cntx1 dt {padding-top: 95px; font-size: 23px; font-weight: bold; line-height: 40px;}
+.cntx1 .detail {padding: 30px; font-size: 15px; color: #8d8d8d; text-shadow: 2px 2px 4px #a8a8a8; }
+.cntx1 .date {font-weight: bold; }
+
+/* visual영역 슬라이더 동작 */
+#main #visual ul.slide {width: 100%; height: 100%; position: absolute; left: 0; top: 0; transition: left 0.5s;}
+#main #visual ul.slide li {width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: none;}
+#main #visual ul.slide li:first-child {display: block;}
+#main #visual ul.indicator {position: absolute; left: 0; bottom: 50px; width: 100%; text-align: center;}
+#main #visual ul.indicator li {display: inline-block;}
+#main #visual ul.indicator li + li {margin-left: 5px;}
+#main #visual ul.indicator li a {display: block; width: 10px; height: 10px; border: 2px solid #ffffff; border-radius: 20px; text-indent: -999px; overflow: hidden; box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);}
+#main #visual ul.indicator li.on a {background: #ffffff;}
+#main #visual p.control a {position: absolute; top: 50%; transform: translate(0, -50%);}
+#main #visual p.control a.prev {left: 50px;}
+#main #visual p.control a.next {right: 50px;}
+#main #visual p.control a.play {right: 50px; top: 91.5%; color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); font-size: 18px;}
+
+
+/*#ff5e7a*/
+
+/*
+
+.on {height: 30px; background: #ff5e7a; border-radius: 10px 10px 0 0; transition: all 0.3s}
+*/
+

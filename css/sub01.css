@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+/*reset*/
+*{margin: 0; padding: 0}
+ul,ol {list-style: none}
+a{text-decoration: none; color: inherit;}
+img{border: 0;}
+body{font: 14px/1.6em 'Noto Sans KR', monospace;color: #8d8d8d;
+background: url(../img/sub/main_bg.jpg) no-repeat fixed; 
+	background-size: 1920px auto;;
+}
+h1,h2,h3,h4,h5,h6, figure{margin: 0;}
+
+/*layout*/
+/*header*/
+div{width: 100%;}
+/*
+header{background: white;width: 1920px;height: 80px; padding: 10px 0px; position: relative;}
+.h_logo{width: 650px;float: left;}
+.h_logo > a, h1{display: inline; font-size: 22px;color: #535050;}
+.h_logo > a:nth-child(1) {font-size: 40px; margin: 5px 30px;color: #8d8d8d;}
+header .h_nav {float: right;width:1150px; margin: 15px auto;}
+header .h_nav ul li a{float: left; display: block; margin:0 auto; width: 120px; font-size: 20px}
+header .h_nav ul li span:hover img{
+	transform: rotate(360deg);
+	transition: all 0.3s;}
+*/
+header {
+    /*position: relative;*/
+    top: 0;left: 0;
+    width: 100%;
+    height: 180px;
+    background-color: white;
+/*    transition: all 0.5s; 왜있는건가요*/
+}
+header > .inner_header a:nth-child(2) {display: none;}
+header > .inner_header {position: relative; width: 1280px; height: 100%;margin: 0 auto;}
+header .logo {width: 200px; height: 80px;}
+header .logo img {width: 100%; margin: 15px 00;}
+header > .inner_header > .tnb {position: absolute; top: 30px; right: 20px;}
+header > .inner_header > .tnb li{display: inline-block;}
+header > .inner_header > .tnb li a {font-size: 13px; color: #6f6f6f;}
+header > .inner_header > .gnb {position: absolute; bottom:20px; left: 0; width: 100%;}
+header > .inner_header > .gnb li {position: relative;float:left; width: 20%; text-align: center; }
+header > .inner_header > .gnb li a {display: inline-block;line-height: 50px; font-size: 18px; transition: all 0.3s}
+/*header > .inner_header > .gnb li:hover a {border-top: 3px solid orange;}*/
+header > .inner_header > .gnb li span {position: absolute; top: 0; left:70px; width: 0; height: 100%; background: #ff1d00; transition: all 0.3s}
+header > .inner_header > .gnb li:hover span {width: 5%; transition: all 0.3s}
+
+/*gnb*/
+.wrap {position: relative;}
+.gnb {
+	position: absolute;
+	top: 100px; left: 0;
+	width: 250px;
+	left: -300px;
+}
+/*main_bg*/
+.main_bg div {width: 320px;height: 260px;padding: 30px 0; margin: 215px auto;border: 5px solid white; background: rgba(0,0,0,0.4)}
+.main_bg div p {text-align: center;color: white;padding: 20px 10px; }
+.main_bg div p:nth-child(1){font-size: 28px;letter-spacing: 28px;padding-left:25px;}
+.main_bg div p:nth-child(2){font-size: 24px; letter-spacing: 12px;}
+.main_bg div p:nth-child(3){font-size: 24px; letter-spacing: 12px;}
+.main_bg div p:nth-child(4){font-size: 44px; letter-spacing: 52px; font-weight: bold; padding-left: 50px;}
+/*cover_info*/
+.cover_info img {width: 50%; height: 572px;}
+.text_box {width: 50%; height: 580px; float: right;background: #fa4a69;}
+.text_box p {width: 65%; margin:150px auto;color: white; font-size: 20px; letter-spacing: 2px; line-height: 28px}
+/*section_func*/
+section.func{float: left; width: 100%; background: #fff;margin-top: -8px;}
+.func div {width: 1200px; margin: 0 auto;color: black;}
+.func div h2 {height: 180px; line-height: 190px; letter-spacing: 5px; font-size: 27px; font-weight: 500;text-align: center;}
+.func div > article {position: relative;margin: 70px 0; float: left;}
+.func div > article h3 {padding: 10px; font-size: 24px; font-weight: normal; text-align: center;}
+.func div > article h4{text-align: center; color: #808080; font-weight: normal; letter-spacing: 2px; text-transform: uppercase;margin-bottom: 20px;}
+.func div > article > p:nth-child(5){padding: 20px 0 ; font-size: 16px;}
+.func div > article > ul li{float: left;clear: both; list-style:inside; color: #808080;}
+.func div > article > ul > li > em{font-style: normal; color: deeppink;}
+.func div > article > a{position: absolute; bottom: 35px; right: 10px; padding: 7px 30px; font-size: 18px; letter-spacing: 2px; border: 1px solid #000;}
+/*footer*/
+footer{float: left; width: 100%;background: #fff}
+footer > .fnb  {border-top: 1px solid #c9c9c9; border-bottom: 1px solid #c9c9c9; height: 50px;}
+footer > .fnb > ul {width: 980px; margin: 0 auto;}
+footer > .fnb li {float: left; width: 20%;}
+footer > .fnb li a {display: block; position: relative; text-align: center; line-height: 50px; font-size: 14px; color: #7c7c7c}
+footer > .fnb li a:after { content: '|'; position: absolute; right: 0; box-sizing: border-box;}
+footer > .inner_footer {width: 100%; background: #f2f2f2; height: 80px;padding: 20px;}
+footer > .inner_footer > .inner_box {width: 1280px; margin: 0 auto; height: 40px;}
+footer .inner_box p {float: left; width: 1280px; text-align: center;color: #ad9c9c;}
+footer .inner_box .f_snsSet {width: 1280px; text-align: center;margin: 10px}
+footer .inner_box .f_snsSet a {color: #ad9c9c; font-size: 1.6em; margin: 10px;}
+
+/*Media query*/
+@media screen and (min-width:480px) and (max-width:639px) {
+	
+	
+}
